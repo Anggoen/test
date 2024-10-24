@@ -45,6 +45,17 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 154, 26, 17),
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(child: Text("Blax Market")),
+            ListTile(
+              leading: Icon(Icons.alarm),
+              title: Text("Blax Market"),
+            )
+          ],
+        ),
+      ),
       body: ListView(
         padding: EdgeInsets.all(15),
         children: [
